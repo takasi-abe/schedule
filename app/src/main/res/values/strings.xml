@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">schedule</string>
+
+    <string-array name="genre">
+        <item>仕事</item>
+        <item>趣味</item>
+        <item>家事</item>
+        <item>その他</item>
+    </string-array>
+
+    <string-array name="priority">
+        <item>最優先</item>
+        <item>普通</item>
+        <item>後回し</item>
+    </string-array>
+</resources>
