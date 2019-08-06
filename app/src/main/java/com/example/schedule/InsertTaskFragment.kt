@@ -7,7 +7,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.CalendarView
 import kotlinx.android.synthetic.main.fragment_insert_task.*
 import java.text.SimpleDateFormat
 import java.util.*
@@ -27,11 +26,11 @@ class InsertTaskFragment : Fragment() {
     override fun onStart() {
         super.onStart()
         button.setOnClickListener {
-            val date = calendarView.date
+            val date = date.dayOfMonth
             Log.d("a", "$date")
 
-            val format = SimpleDateFormat("yyyy/mm/dd")
-            Log.d("b", "${format.format(date)}")
+//            val format = SimpleDateFormat("yyyy/m/dd", Locale.getDefault())
+//            Log.d("b", format.format(date))
         }
     }
 }
