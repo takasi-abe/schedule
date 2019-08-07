@@ -7,9 +7,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import kotlinx.android.synthetic.main.fragment_insert_date.*
 import kotlinx.android.synthetic.main.fragment_insert_task.*
-import java.text.SimpleDateFormat
-import java.util.*
 
 
 class InsertTaskFragment : Fragment() {
@@ -25,12 +24,23 @@ class InsertTaskFragment : Fragment() {
 
     override fun onStart() {
         super.onStart()
-        button.setOnClickListener {
-            val date = date.dayOfMonth
-            Log.d("a", "$date")
-
-//            val format = SimpleDateFormat("yyyy/m/dd", Locale.getDefault())
-//            Log.d("b", format.format(date))
+        date.setOnClickListener {
+            val fragment = InsertDateFragment()
+            val fragmentManager = activity!!.supportFragmentManager
+            val fragmentTransaction = fragmentManager.beginTransaction()
+            fragmentTransaction.replace(R.id.container, fragment)
+                .commit()
         }
+        button.setOnClickListener {
+            dateLog()
+        }
+    }
+
+    private fun dateLog() {
+        val year = select_date.year
+        val month = select_date.month
+        val day = select_date.dayOfMonth
+        Log.d("a", "$year/$month/$day")
+
     }
 }

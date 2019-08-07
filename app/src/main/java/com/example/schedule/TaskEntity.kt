@@ -1,6 +1,7 @@
 package com.example.schedule
 
 import com.squareup.moshi.Json
+import java.time.Year
 
 data class TaskEntity (
     @Json (name = "taskList")
@@ -9,5 +10,8 @@ data class TaskEntity (
 
 data class TaskDetail (
     val task: String,
-    val date: String
+    val day: Int,
+    val month: Int,
+    val year: Int
+
 )
