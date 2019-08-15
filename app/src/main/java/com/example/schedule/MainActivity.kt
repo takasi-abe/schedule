@@ -15,5 +15,17 @@ class MainActivity : AppCompatActivity() {
 
         pager.adapter = TabAdapter(supportFragmentManager, this)
         tabLayout.setupWithViewPager(pager)
+
+//        insertTaskButton.setOnClickListener{
+//
+//            val fragment = InsertTaskFragment()
+//            val fragmentManager = supportFragmentManager
+//            val fragmentTransaction = fragmentManager.beginTransaction()
+//
+//            fragmentTransaction.replace(R.id.pager, fragment)
+//                .commit()
+//        }
     }
+
+
 }

@@ -14,7 +14,7 @@
         <item>後回し</item>
     </string-array>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="date">2019/01/01</string>
+    <string name="jobGenre1">予定一覧</string>
+    <string name="insert_save_bottom"><p>保存</p></string>
 </resources>

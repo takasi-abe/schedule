@@ -9,7 +9,14 @@
             android:layout_height="wrap_content"
             android:id="@+id/select_date"
             app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="108dp"
-            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="285dp"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="31dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="30dp"/>
+    <Button
+            android:text="Button"
+            android:layout_width="138dp"
+            android:layout_height="57dp"
+            android:id="@+id/date_save" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/select_date"
+            app:layout_constraintEnd_toEndOf="@+id/select_date"
+            app:layout_constraintStart_toStartOf="@+id/select_date"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
